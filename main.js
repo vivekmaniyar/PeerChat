@@ -1,4 +1,4 @@
-let APP_ID="317bfcb35162405ba288565c2dad34e4";
+let APP_ID="9afef10cc80b4f6ba0e812c5c655f7d2";
 
 let token = null;
 let uid = String(Math.floor(Math.random()*10000));
@@ -36,7 +36,7 @@ let constraints = {
 
 let init = async () => {
     client = await AgoraRTM.createInstance(APP_ID);
-    await client.login({uid,token});
+    await client.login({uid});
 
     //index.html?room=243345
     channel = client.createChannel(roomId);
